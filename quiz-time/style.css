@@ -1,0 +1,384 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 1px;
+    width: stretch;
+    height: auto;
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
+    background-size: 1480px;
+    background-position-y: -380px;
+}
+
+.quiz {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    position: relative;
+    justify-content: center;
+    color: black;
+    background-color: rgb(252, 249, 250);
+    height: auto;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.category {
+    background: #e4be56;
+    border-radius: 8px;
+    font-size: 23px;
+    font-display: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.question {
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+.answers {
+    color:rgb(17, 17, 16);
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 22px;
+	border-style:solid;
+    border-color: black;
+	border-radius: 15px;
+	padding: 6px;
+	cursor: pointer;
+}
+
+button:hover{
+    color:rgb(252, 249, 250);
+    border-style: 300px;
+    border-color: rgb(223, 216, 216);
+	background-color: rgb(18, 20, 20);
+}
+
+.quiz-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.question-card {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    color:rgb(15, 14, 15);
+    background-color: rgb(252, 249, 250);
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/a_glass_of_beer_closeup_picture_167081.jpg");
+    background-size: 600px;
+    background-position-y: -10px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 1px black solid;
+    height: 208px;
+    width: 300px;
+    box-shadow: 6px 3px rgb(48, 49, 48);
+    border-radius: 10px;
+}
+
+.correct-answer {
+    color:rgb(252, 249, 250);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    height: 208px;
+    width: 300px;
+    box-shadow: 6px 3px rgb(48, 49, 48);
+    background-color: rgb(155, 219, 125);
+    border-radius: 10px;
+}
+
+.wrong-answer {
+    color:rgb(252, 249, 250);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px black solid;
+    height: 208px;
+    width: 300px;
+    box-shadow: 6px 3px rgb(48, 49, 48);
+    background-color: rgb(192, 87, 101);
+    border-radius: 10px;
+}
+
+#results {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://i.gifer.com/11eI.gif");
+    height: auto;
+    width: 200px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://i.gifer.com/2Dl.gif");
+    background-position:-3rem;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://i.pinimg.com/originals/d4/71/d5/d471d522f81091cd0f1cf64c920abffd.gif");
+    background-position:-3rem;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results3 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://media1.tenor.com/images/b2415996554bd332c14e9b62e9a972cb/tenor.gif?itemid=17033722");
+    background-position:-3rem;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results4 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://thumbs.gfycat.com/HarshShrillKarakul.webp");
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results5 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif");
+    background-size: 300px;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+#results6 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-display: bold;
+    position:relative;
+    display: inline-block;
+    background-image: url("https://i.gifer.com/1klM.gif");
+    size: 100px;
+    background-size: 300px;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    color: rgb(243, 231, 231);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #cfdbdb;
+    text-shadow: 0 0 5px rgb(216, 194, 194),
+    0 0 20px rgb(216, 223, 215),
+    0 0 40px rgb(151, 201, 201),
+    0 0 80px rgb(156, 202, 202),
+    0 0 90px rgb(141, 187, 187),
+    0 0 100px rgb(149, 196, 196),
+}
+
+.comeback {
+    font-family:monospace;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+.answer-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.answer-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+ 
+.answer-container:hover input ~ .checkmark {
+    background-color: #e6c99f;
+}
+
+.checkmark:after {
+    content: "🍺";
+    margin-top: -5px;
+    zoom: 150%;
+    position: relative;
+    display: none;
+}
+
+.answer-container input:checked ~ .checkmark:after {
+   display:block;
+}
+
+ .answers-after {
+   color:rgb(253, 252, 250);
+   text-align: left;
+   display: inline-block;
+}
+
+.answers-after label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.category-after {
+    background: #fdfcfa;
+    border-radius: 7px;
+    font-size: 23px;
+    color:rgb(8, 8, 8);
+    font-display: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.show-off {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-display: bold;
+    position:relative;
+    justify-content: center;
+}
+
+
