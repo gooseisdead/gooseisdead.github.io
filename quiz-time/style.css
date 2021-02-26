@@ -54,11 +54,17 @@ h1 {
     margin-bottom: 10px;
 }
 
+@media(hover: hover) and (pointer: fine) {
+    nav a:hover {
+        background: yellow;
+    }
+}
+
 button {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 22px;
 	border-style:solid;
-    border-color: black;
+    border-color: rgb(39, 36, 36);
 	border-radius: 15px;
 	padding: 6px;
 	cursor: pointer;
